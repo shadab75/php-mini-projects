@@ -6,7 +6,7 @@ $website = $_POST['website'];
 $message = $_POST['message'];
 if (!empty($email)&&!empty($message)){
 if (filter_var($email,FILTER_VALIDATE_EMAIL)){
-$receiver = "shadabfar75@gmail.com";
+$receiver = "a valid email address";
 $subject = "From:$name<$email>";
 $body = "Name:$name\nEmail:$email\nPhone:\nWebsite:$website\nMessage:$message\n\nRegards,\n$name";
 $sender = "From:$email";
